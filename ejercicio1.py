@@ -73,7 +73,6 @@ def juego(d, torre_inc, torre_aux, torre_fin):
         print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name)
     else:
         juego(d - 1, torre_inc, torre_aux, torre_fin)
-        apilar(torre_fin, desapilar(torre_inc))
+        apilar(torre_aux, desapilar(torre_inc))
         print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name)
         juego(d - 1, torre_inc, torre_aux, torre_fin)
-        
