@@ -5,7 +5,7 @@ from ejercicio5 import *
 if __name__ == "__main__":
     ej = int(input("Introduzca el número del ejercicio que desea ejecutar: "))
     if ej == 1:
-        juego(d, torre_inc, torre_aux, torre_fin)
+        juego( torre_inc, torre_aux, torre_fin)
     elif ej == 4:
         polinomio1 = int(input("Introduzca el valor de la incognita x: "))
         gradopolinomio1= int(input("Introduzca el grado del polinomio: "))
