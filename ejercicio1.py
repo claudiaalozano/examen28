@@ -72,13 +72,14 @@ def juego(d, torre_inc, torre_aux, torre_fin):
         apilar(torre_fin, desapilar(torre_inc))
         print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name)
     else:
-        juego(d - 1, torre_inc, torre_aux, torre_fin)
-        apilar(torre_fin, desapilar(torre_inc))
-        print("El disco se ha movido de ", torre_inc.name, " a ", torre_aux.name)
-        juego(d - 1, torre_inc, torre_aux, torre_fin)
-
-        if d > 20:
+        if d > 10:
             juego(d - 1, torre_inc, torre_aux, torre_fin)
             a = apilar(torre_fin, desapilar(torre_inc))
             print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name.count(), "estas veces ", a.count())
             juego(d - 1, torre_inc, torre_aux, torre_fin)
+        else:
+            juego(d - 1, torre_inc, torre_aux, torre_fin)
+            apilar(torre_fin, desapilar(torre_inc))
+            print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name)
+            juego(d - 1, torre_inc, torre_aux, torre_fin)
+
