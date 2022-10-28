@@ -59,8 +59,8 @@ def mostrar(polinomio):
 
 def restar (polinomio1, polinomio2):
     paux = Polinomio()
-    mayor = polinomio1 if (polinomio1.grado > polinomio2.grado) else polinomio2
-    for i in range(0, mayor.grado+1):
+    mayor = polinomio1 if (polinomio1 > polinomio2) else polinomio2
+    for i in range(0, mayor):
         total = obtener_valor(polinomio1, i) - obtener_valor(polinomio2, i)
         if total != 0:
             agregar(paux, i, total)
@@ -84,4 +84,6 @@ def dividir(polinomio1, polinomio2):
         pol1 = pol1.sig
     return paux 
 
+
+#def eliminar_un_termino(polinomio, termino):
 
