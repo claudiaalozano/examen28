@@ -1,5 +1,7 @@
 from ejercicio1 import *
 from ejercicio4 import *
+from ejercicio5 import *
+
 if __name__ == "__main__":
     ej = int(input("Introduzca el número del ejercicio que desea ejecutar: "))
     if ej == 1:
@@ -16,4 +18,7 @@ if __name__ == "__main__":
             coeficiente = int(input("\n introduzca el coeficiente: "))
             print("(", str(coeficiente) + ")" + str(polinomio2) + " ^ " + str(gradopolinomio2 -i))
         restar(polinomio1, polinomio2)
+
+    elif ej == 5:
+        encriptacion()
             
