@@ -67,4 +67,13 @@ torre_fin = Pila("Torre final")
 d = int(input("Introduce en número de discos: "))
 
 def juego(d, torre_inc, torre_aux, torre_fin):
-    
+
+    if d == 1:
+        apilar(torre_fin, desapilar(torre_inc))
+        print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name)
+    else:
+        juego(d - 1, torre_inc, torre_aux, torre_fin)
+        apilar(torre_fin, desapilar(torre_inc))
+        print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name)
+        juego(d - 1, torre_inc, torre_aux, torre_fin)
+        
