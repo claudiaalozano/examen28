@@ -21,4 +21,5 @@ if __name__ == "__main__":
 
     elif ej == 5:
         encriptacion()
+        desencriptacion ()
             
