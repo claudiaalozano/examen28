@@ -35,4 +35,11 @@ def modificar(polinomio, termino, valor):
     while(aux is not None and aux.info.termino != termino):
         aux = aux.sig 
     aux.info.valor = valor
-    
+
+def obtener_valor(polinomio, termino):
+    aux = polinomio.termino_mayor
+    while(aux is not None and aux.info.termino > termino):
+        aux = aux.sig 
+    if(aux is not None and aux.info.termino == termino):
+        return aux.info.valor  
+        
