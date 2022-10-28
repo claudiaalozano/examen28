@@ -59,3 +59,9 @@ def barrido(pila):
     while not pila.pila_vacia(paux):
         dato = pila.desapilar(paux)
         pila.apilar(pila, dato)
+
+
+torre_inc = Pila("Torre inicial")
+torre_aux = Pila("Torre auxiliar")
+torre_fin = Pila("Torre final")
+d = int(input("Introduce en número de discos: "))
