@@ -23,8 +23,9 @@ if __name__ == "__main__":
         agregar(polinomio2, 2, 6)
         agregar(polinomio2, 1, 3)
         agregar(polinomio2, 0, 1)
-        print(mostrar(restar(polinomio1, polinomio2)))
-        print(mostrar(dividir(polinomio1, polinomio2)))
+        print("La resta de los polinomios es: " , mostrar(restar(polinomio1, polinomio2)))
+        print("La división de los polinomios es: " ,mostrar(dividir(polinomio1, polinomio2)))
+        print(mostrar(eliminar_un_termino(polinomio1)))
     
     elif ej == 5:
         encriptacion()

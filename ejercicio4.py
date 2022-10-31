@@ -86,14 +86,22 @@ def dividir(polinomio1, polinomio2):
     return paux 
 
 
-def eliminar_un_termino(polinomio1, termino):
-    paux =Polinomio()
+def eliminar_un_termino(polinomio1):
+    
     p = int(input("Del polinomio 2x^2-x+2, ¿qué termino desea eliminar(2,1 o 0): "))
     if p == 2:
-        polinomio1.termino_mayor = polinomio1.termino_mayor.info.valor
-        polinomio1.grado = paux.grado-1
-        polinomio1.termino_mayor.sig =None
-        
+        polinomio1.termino_mayor = mostrar(polinomio1.termino_mayor.info.valor)
+        polinomio1.grado = polinomio1.grado-1
+        polinomio1.termino_mayor.sig = None
+        print("El polinomio ahora es: ", mostrar(polinomio1))
 
-     
+
+def buscar_termino(polinomio1):
+    paux = Polinomio()
+    p = int(input("¿qué termino desea comprobar si existe: "))
+    if obtener_valor(polinomio1, p) == 0:
+        print("El termino que buscas no se encuentra en el polinomio.")
+    else:
+        print("El termino que buscas si que existe en el polinomio.")
+    
 
