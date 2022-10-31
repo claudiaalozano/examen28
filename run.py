@@ -29,6 +29,7 @@ def menu():
         print(buscar_termino(polinomio1))
     
     elif ej == 5:
+        
         c = str(input("Introduce el mensaje para encriptar: ")).encode("utf-8")
         resolver = str(input("Hash a resolver: "))
         encriptacion(c, resolver)
