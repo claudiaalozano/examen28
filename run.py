@@ -1,4 +1,5 @@
 from ejercicio1 import *
+from ejercicio2 import *
 from ejercicio4 import *
 from ejercicio5 import *
 
@@ -7,6 +8,9 @@ if __name__ == "__main__":
     if ej == 1:
         d = int(input("Introduce en número de discos: "))
         juego( d, torre_inc, torre_aux, torre_fin)
+    elif ej == 2:
+        n =3
+        print(elementos_matriz(n), sarrus(m)) 
     elif ej == 4:
         polinomio1 = int(input("Introduzca el valor de la incognita x: "))
         gradopolinomio1= int(input("Introduzca el grado del polinomio: "))
