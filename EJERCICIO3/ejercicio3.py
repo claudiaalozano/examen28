@@ -1,4 +1,4 @@
-#class Naves:
+
 lista = []
 def lista_naves():
     
@@ -50,7 +50,8 @@ def naves_at():
     for n in nombres:
         if n.startswith('AT') == True:
             s.append(n)
-            print(s)
+            print("Las naves que empiezan por AT son: ", s)
+
             
 def mayor_tripulacion():
     mt = []
@@ -74,9 +75,31 @@ def seis_pasajeros():
     lista_pasajeros.append(lista[6][3])
     lista_pasajeros.sort()
     s = []
+    for l in lista_pasajeros:
+        if l >= 6:
+            s.append(l)
+            print(l)
 
+def inf_peq_may():
+    inf = []
+    inf.append(lista[0][1])
+    inf.append(lista[1][1])
+    inf.append(lista[2][1])
+    inf.append(lista[3][1])
+    inf.append(lista[4][1])
+    inf.append(lista[5][1])
+    inf.append(lista[6][1])
+    
+    maximo = 1000
+    minimo = 50
+    for i in range(len(inf)):
+        if inf[i] > maximo:
+            maximo = inf[i]
+            mayor = lista[i]
+            print("Los valores de la nave más grande son: " , mayor)
+        if inf[i] < minimo:
+            minimo = inf[i]
+            menor = lista[i]
+            print("Los valores de la nave más pequeña son: " , menor)
+    
 
-lista_naves()
-print(mayor_cantidad_pasajeros())
-print(naves_at())
-print(mayor_tripulacion())

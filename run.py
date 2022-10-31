@@ -1,7 +1,8 @@
-from ejercicio1 import *
-from ejercicio2 import *
-from ejercicio4 import *
-from ejercicio5 import *
+from EJERCICIO1.ejercicio1 import *
+from EJERCICIO2.ejercicio2 import *
+from EJERCICIO3.ejercicio3 import *
+from EJERCICIO4.ejercicio4 import *
+from EJERCICIO5.ejercicio5 import *
 
 def menu():
     ej = int(input("Introduzca el número del ejercicio que desea ejecutar: "))
@@ -12,6 +13,14 @@ def menu():
     elif ej == 2:
         n =3
         print(elementos_matriz(n), sarrus(m)) 
+
+    elif ej == 3:
+        lista_naves()
+        print(mayor_cantidad_pasajeros())
+        print(naves_at())
+        print(mayor_tripulacion())
+        print(seis_pasajeros())
+        print(inf_peq_may())
     
     elif ej == 4:
         polinomio1 = Polinomio()
