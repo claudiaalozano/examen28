@@ -13,6 +13,7 @@ def encriptacion(c, resolver):
         if a == resolvedor:
             with open("desencriptados.txt" , "w") as f:
                 f.write(resolver)
-        else: 
-            print("Las claves no coinciden.")
+         
+        else:
+            return print("Las claves no coinciden.")
 

@@ -3,7 +3,7 @@ from ejercicio2 import *
 from ejercicio4 import *
 from ejercicio5 import *
 
-if __name__ == "__main__":
+def menu():
     ej = int(input("Introduzca el número del ejercicio que desea ejecutar: "))
     if ej == 1:
         d = int(input("Introduce en número de discos: "))
