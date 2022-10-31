@@ -86,5 +86,7 @@ def dividir(polinomio1, polinomio2):
     return paux 
 
 
-#def eliminar_un_termino(polinomio, termino):
+def eliminar_un_termino(polinomio1, termino):
+    paux =Polinomio()
+    paux.termino_mayor = 
 
