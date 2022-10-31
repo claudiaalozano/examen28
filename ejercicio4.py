@@ -88,5 +88,6 @@ def dividir(polinomio1, polinomio2):
 
 def eliminar_un_termino(polinomio1, termino):
     paux =Polinomio()
-    paux.termino_mayor = 
+    p = int(input("Del polinomio 2x^2-x+2, ¿qué termino desea eliminar(2,1 o 0): "))
+     
 
