@@ -5,8 +5,7 @@ def elementos_matriz(n):
         matriz.append([])
         for j in range (n):
             v= int(input("Introduzca valor:"))
-            matriz[i].append()
+            matriz[i].append(v)
     return matriz
-
-n = int(input('Dimensiones de la matriz: '))
+n =3
 print(elementos_matriz(n))
