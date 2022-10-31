@@ -77,3 +77,4 @@ def juego(d, torre_inc, torre_aux, torre_fin):
         print("El disco se ha movido de ", torre_inc.name, " a ", torre_fin.name)
         juego(d - 1, torre_aux, torre_inc, torre_fin)
 
+#Para hacer una torre de hanoi de 74 discos el tiempo estimado es muy largo por eso el código no para de ejecutarse.
