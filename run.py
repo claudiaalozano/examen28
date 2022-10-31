@@ -26,6 +26,7 @@ if __name__ == "__main__":
         print("La resta de los polinomios es: " , mostrar(restar(polinomio1, polinomio2)))
         print("La división de los polinomios es: " ,mostrar(dividir(polinomio1, polinomio2)))
         print(mostrar(eliminar_un_termino(polinomio1)))
+        print(buscar_termino(polinomio1))
     
     elif ej == 5:
         encriptacion()

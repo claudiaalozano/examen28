@@ -8,10 +8,11 @@ def encriptacion():
 
 
 def desencriptacion():
-    resolverhash = str(input("Hash a resolver: ")).encode("utf-8")
+    resolver = str(input("Hash a resolver: "))
     resolvedor = open("encriptados.txt", "r")
     for x in resolvedor.readlines():
-        a= sha256(resolverhash).hexdigest()[:8]
-    if a == resolvedor:
-        with open("desencriptados.txt" , "w", encoding= "utf-8") as f:
-            f.write(resolverhash)
+        r = resolver.encode("utf-8")
+        a= sha256(r).hexdigest()[:8]
+        if a == r:
+            with open("desencriptados.txt" , "a") as f:
+                f.write(resolver)
